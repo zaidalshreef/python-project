@@ -7,8 +7,8 @@ import json
 
 db = SQLAlchemy()
 
-DATABASE_URI = "postgresql://postgres:987654321@localhost:5432/academy"
-
+DATABASE_URI = os.getenv("DATABASE")
+print(os.getenv("DATABASE"))
 def setup_db(app, database_path=DATABASE_URI):
     app.config["SQLALCHEMY_DATABASE_URI"] = database_path
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False

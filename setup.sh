@@ -1,4 +1,5 @@
 
-export FLASK_APP=app
-export FLASK_ENV=development
-export DATABASE_URI="postgresql://postgres:987654321@localhost:5432/casting_agency"
+
+export DATABASE="postgresql://zaid:Zaid12345*@pgm-gs5h6g493n9870dioo.pgsql.singapore.rds.aliyuncs.com:5432/academy"
+export FLASK_APP="app"
+export FLASK_DEBUG="development"
